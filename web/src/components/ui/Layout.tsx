@@ -1,5 +1,6 @@
 import Head from 'next/head';
-
+import Header from './Header';
+import Footer from './Footer';
 export default function Layout({title, keywords, description, children}:any) {
     return (
         <div>
@@ -8,9 +9,11 @@ export default function Layout({title, keywords, description, children}:any) {
                 <meta name='description' content={description} />
                 <meta name='keywords' content={keywords} />
             </Head>
+            <Header />
             <div className='container mx-auto '>
                 {children}
             </div>
+            <Footer />
         </div>
     )
 
