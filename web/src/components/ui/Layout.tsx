@@ -3,14 +3,14 @@ import Header from './Header';
 import Footer from './Footer';
 export default function Layout({title, keywords, description, children}:any) {
     return (
-        <div>
+        <div className='h-full'>
             <Head>
                 <title>{title}</title>
                 <meta name='description' content={description} />
                 <meta name='keywords' content={keywords} />
             </Head>
             <Header />
-            <div className='container mx-auto '>
+            <div className='h-full'>
                 {children}
             </div>
             <Footer />
