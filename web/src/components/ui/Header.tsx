@@ -6,7 +6,7 @@ function Header() {
   return (
     <header className="sticky top-0 z-130 flex justify-between items-center bg-heroSectionColor text-white h-25 p-10 shadow-md ">
         <div className='text-white font-bold text-'>
-            <Link href='/'>
+            <Link href='#hero'>
                 My | Portfolio
             </Link>
         </div>
@@ -14,24 +14,32 @@ function Header() {
         <nav>
             <ul className="flex items-center justify-center list-none">
                 <li className="mx-6">
-                    <Link href='/about'>
+                <Link href='#about' legacyBehavior>
+                    <a className="transition-transform transform hover:scale-105 hover:text-portfolioColorBtn">
                         About
-                    </Link>
+                    </a>
+                </Link>
                 </li>
                 <li className="mx-6">
-                    <Link href='/about'>
+                <Link href='#services' legacyBehavior>
+                    <a className="transition-transform transform hover:scale-105 hover:text-portfolioColorBtn">
                         Services
-                    </Link>
+                    </a>
+                </Link>    
                 </li>
                 <li className="mx-6">
-                    <Link href='/about'>
+                <Link href='#projects' legacyBehavior>
+                    <a className="transition-transform transform hover:scale-105 hover:text-portfolioColorBtn">
                         Portfolio
-                    </Link>
+                    </a>
+                </Link>
                 </li>
                 <li className="mx-4">
-                    <Link href='/about'>
+                <Link href='#contactForm' legacyBehavior>
+                    <a className="transition-transform transform hover:scale-105 hover:text-portfolioColorBtn">
                         Contact
-                    </Link>
+                    </a>
+                 </Link>
                 </li>
             </ul>
         </nav>

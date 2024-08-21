@@ -13,7 +13,7 @@ function Projects() {
     <section className="py-12 bg-primaryColor text-white">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12">Our <span className="text-portfolioColorBtn">Projects</span></h2>
-        <div className="flex flex-wrap justify-center space-y-6 md:space-y-0 md:space-x-12 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 m-5 p-4 gap-4">
           {projects.map((project, index) => (
             <ProjectCard key={index} imageSrc={project.imageSrc} imageAlt={project.imageAlt} text={project.text} />
           ))}
