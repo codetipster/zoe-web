@@ -3,11 +3,12 @@ import HeroSection from '@/components/ui/HeroSection';
 import About from '@/components/ui/About';
 import Services from '@/components/ui/Services';
 import Projects from '@/components/ui/Projects';
+import ContactForm from '@/components/ui/ContactForm';
 
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout >
       <section className='bg-heroSectionColor h-full mx-auto' id='hero'>
         <HeroSection />
       </section>
@@ -17,8 +18,11 @@ export default function Home() {
       <section className='bg-heroSectionColor h-full mx-auto' id='services'>
         <Services />
       </section>
-      <section className='bg-[#414355]'>
+      <section className='bg-[#414355]' id='projects'>
         <Projects />
+      </section>
+      <section className='bg-heroSectionColor h-full mx-auto' id='contactForm'>
+        <ContactForm />
       </section>
     </Layout>
   );
